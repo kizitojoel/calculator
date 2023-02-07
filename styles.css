@@ -13,22 +13,35 @@ body{
 }
 .calculator
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    padding: 16px;
     background-color: rgb(2, 2, 27);
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 375px;
     align-self: center;
     justify-self: center;
     border-radius: 5%;
-    padding: 12px;
-    flex-wrap: wrap;
+}
+.screen
+{
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    background-color: bisque;
+}
+.span-2
+{
+    grid-column: span 2;
 }
 .button
 {
     background-color: grey;
     border-radius: 50%;
-    width: 5em;
-    height: 5em;
+    width: 5.2em;
+    height: 5.2em;
+    margin: auto;
 }
 .main
 {
