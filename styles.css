@@ -33,13 +33,12 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-/* #previous, #current
-{
-    grid-column: 1 / span 4;
-} */
+
 #previous, #current
 {
-    font-size: large;
+    font-size: xx-large;
+    text-align: right;
+
 }
 .span-2
 {
