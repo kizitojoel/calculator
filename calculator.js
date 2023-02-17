@@ -170,11 +170,7 @@ document.addEventListener('keydown', (event) => {
         current.textContent += name;
         checkOperation()
       }
-      else if(name === "-")
-      {
-        current.textContent += name;
-        checkOperation()
-      }
+      
     //   console.log(mapKeyPressToActualCharacter(true, characterMap.indexOf(name)))
 
 
@@ -197,6 +193,11 @@ document.addEventListener('keydown', (event) => {
       else if(name === "/")
       {
         current.textContent += "÷";
+        checkOperation()
+      }
+      else if(name === "-")
+      {
+        current.textContent += name;
         checkOperation()
       }
     }
