@@ -143,7 +143,7 @@ deleteButton.addEventListener("click", () => {
 // Keyboard responsiveness
 
 // Declare full list
-keyboardList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "(",")", ".", "-"];
+keyboardList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "(",")", "."];
 
 
 // Add event listener on keydown
@@ -170,6 +170,11 @@ document.addEventListener('keydown', (event) => {
         current.textContent += name;
         checkOperation()
       }
+      else if(name === "-")
+      {
+        current.textContent += name;
+        checkOperation()
+      }
     //   console.log(mapKeyPressToActualCharacter(true, characterMap.indexOf(name)))
 
 
@@ -192,6 +197,7 @@ document.addEventListener('keydown', (event) => {
       else if(name === "/")
       {
         current.textContent += "÷";
+        checkOperation()
       }
     }
   }, false);
