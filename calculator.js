@@ -28,7 +28,7 @@ function operate()
     // Using add operator
     if (currentContent.includes("+"))
     {
-        console.log("We are here");
+        console.log("This is an add operation");
         splitContent = currentContent.split("+");
         if (splitContent.length >= 2)
         {
@@ -38,6 +38,39 @@ function operate()
         }
 
     }
+    // Using subtract operator
+    else if(currentContent.includes("-"))
+    {
+        console.log("This is a subtraction operation");
+        splitContent = currentContent.split("-");
+        if (splitContent.length >= 2)
+        {
+            screenClear();
+            current.textContent = subtract(parseFloat(splitContent[0]), parseFloat(splitContent[1]))
+        }
+    }
+    // Using division operator
+    else if(currentContent.includes("÷"))
+    {
+        console.log("This is a division operation");
+        splitContent = currentContent.split("÷");
+        if (splitContent.length >= 2)
+        {
+            screenClear();
+            current.textContent = divide(parseFloat(splitContent[0]), parseFloat(splitContent[1]))
+        }
+    }
+    else if(currentContent.includes("×"))
+    {
+        console.log("This is a multiplication operation");
+        splitContent = currentContent.split("×");
+        if (splitContent.length >= 2)
+        {
+            screenClear();
+            current.textContent = multiply(parseFloat(splitContent[0]), parseFloat(splitContent[1]))
+        }
+    }
+    
     // splitContent = currentContent.split("");
 
     // let a = splitContent[0]
