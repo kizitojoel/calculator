@@ -30,6 +30,16 @@ body{
     grid-column: 1 / span 4;
     grid-row: 1 / span 2;
     background-color: bisque;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+/* #previous, #current
+{
+    grid-column: 1 / span 4;
+} */
+#previous, #current
+{
+    font-size: large;
 }
 .span-2
 {
