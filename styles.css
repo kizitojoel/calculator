@@ -38,6 +38,7 @@ body{
 {
     font-size: xx-large;
     text-align: right;
+    overflow: scroll;
 
 }
 .span-2
